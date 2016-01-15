@@ -1,0 +1,24 @@
+language: php
+
+sudo: false
+
+php:
+    - 5.6
+
+services:
+    - mysql
+
+before_script:
+    - mysql -e "create database silex_tests; USE mysql;UPDATE user SET password=PASSWORD('root') WHERE user='root';FLUSH PRIVILEGES;"
+
+matrix:
+    fast_finish: true
+    allow_failures:
+        - php: 7.0
+
+install:
+    - travis_retry composer self-update && composer --version
+    - travis_retry composer install --no-interaction --prefer-source
+
+script:
+    - ./vendor/bin/codecept run

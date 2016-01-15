@@ -1,0 +1,305 @@
+[
+    {
+        "name": "logger",
+        "type": "null",
+        "value": ""
+    },
+    {
+        "name": "routes",
+        "type": "class",
+        "value": "Symfony\\Component\\Routing\\RouteCollection"
+    },
+    {
+        "name": "controllers",
+        "type": "class",
+        "value": "Silex\\ControllerCollection"
+    },
+    {
+        "name": "controllers_factory",
+        "type": "class",
+        "value": "Silex\\ControllerCollection"
+    },
+    {
+        "name": "route_class",
+        "type": "string",
+        "value": "Silex\\Route"
+    },
+    {
+        "name": "route_factory",
+        "type": "class",
+        "value": "Silex\\Route"
+    },
+    {
+        "name": "exception_handler",
+        "type": "class",
+        "value": "Silex\\ExceptionHandler"
+    },
+    {
+        "name": "dispatcher_class",
+        "type": "string",
+        "value": "Symfony\\Component\\EventDispatcher\\EventDispatcher"
+    },
+    {
+        "name": "dispatcher",
+        "type": "class",
+        "value": "Symfony\\Component\\EventDispatcher\\EventDispatcher"
+    },
+    {
+        "name": "callback_resolver",
+        "type": "class",
+        "value": "Silex\\CallbackResolver"
+    },
+    {
+        "name": "resolver",
+        "type": "class",
+        "value": "Silex\\ServiceControllerResolver"
+    },
+    {
+        "name": "kernel",
+        "type": "class",
+        "value": "Symfony\\Component\\HttpKernel\\HttpKernel"
+    },
+    {
+        "name": "request_stack",
+        "type": "class",
+        "value": "Symfony\\Component\\HttpFoundation\\RequestStack"
+    },
+    {
+        "name": "request_context",
+        "type": "class",
+        "value": "Symfony\\Component\\Routing\\RequestContext"
+    },
+    {
+        "name": "url_matcher",
+        "type": "class",
+        "value": "Silex\\RedirectableUrlMatcher"
+    },
+    {
+        "name": "request_error",
+        "type": "closure",
+        "value": ""
+    },
+    {
+        "name": "request",
+        "type": "class",
+        "value": "Symfony\\Component\\HttpFoundation\\Request"
+    },
+    {
+        "name": "request.http_port",
+        "type": "int",
+        "value": 80
+    },
+    {
+        "name": "request.https_port",
+        "type": "int",
+        "value": 443
+    },
+    {
+        "name": "debug",
+        "type": "bool",
+        "value": true
+    },
+    {
+        "name": "charset",
+        "type": "string",
+        "value": "UTF-8"
+    },
+    {
+        "name": "locale",
+        "type": "string",
+        "value": "en"
+    },
+    {
+        "name": "root.path",
+        "type": "string",
+        "value": "\/var\/www"
+    },
+    {
+        "name": "cache.path",
+        "type": "string",
+        "value": "\/var\/www\/var\/cache"
+    },
+    {
+        "name": "monolog.level",
+        "type": "int",
+        "value": 100
+    },
+    {
+        "name": "migrations",
+        "type": "array",
+        "value": ""
+    },
+    {
+        "name": "cache.lifetime",
+        "type": "int",
+        "value": 0
+    },
+    {
+        "name": "swiftmailer.options",
+        "type": "array",
+        "value": ""
+    },
+    {
+        "name": "db.options",
+        "type": "array",
+        "value": ""
+    },
+    {
+        "name": "dump.path",
+        "type": "string",
+        "value": "\/var\/www"
+    },
+    {
+        "name": "db.default_options",
+        "type": "array",
+        "value": ""
+    },
+    {
+        "name": "dbs.options.initializer",
+        "type": "closure",
+        "value": ""
+    },
+    {
+        "name": "dbs",
+        "type": "container",
+        "value": [
+            {
+                "name": "default",
+                "type": "class",
+                "value": "Doctrine\\DBAL\\Connection"
+            }
+        ]
+    },
+    {
+        "name": "dbs.config",
+        "type": "container",
+        "value": [
+            {
+                "name": "default",
+                "type": "class",
+                "value": "Doctrine\\DBAL\\Configuration"
+            }
+        ]
+    },
+    {
+        "name": "dbs.event_manager",
+        "type": "container",
+        "value": [
+            {
+                "name": "default",
+                "type": "class",
+                "value": "Doctrine\\Common\\EventManager"
+            }
+        ]
+    },
+    {
+        "name": "db",
+        "type": "class",
+        "value": "Doctrine\\DBAL\\Connection"
+    },
+    {
+        "name": "db.config",
+        "type": "class",
+        "value": "Doctrine\\DBAL\\Configuration"
+    },
+    {
+        "name": "db.event_manager",
+        "type": "class",
+        "value": "Doctrine\\Common\\EventManager"
+    },
+    {
+        "name": "dbs.options",
+        "type": "array",
+        "value": ""
+    },
+    {
+        "name": "dbs.default",
+        "type": "string",
+        "value": "default"
+    },
+    {
+        "name": "db.orm.config",
+        "type": "class",
+        "value": "Doctrine\\ORM\\Configuration"
+    },
+    {
+        "name": "db.orm.entities",
+        "type": "array",
+        "value": ""
+    },
+    {
+        "name": "db.orm.proxies_dir",
+        "type": "string",
+        "value": "\/var\/www\/src\/Provider\/..\/Proxy"
+    },
+    {
+        "name": "db.orm.proxies_namespace",
+        "type": "string",
+        "value": "DoctrineProxy"
+    },
+    {
+        "name": "db.orm.auto_generate_proxies",
+        "type": "bool",
+        "value": true
+    },
+    {
+        "name": "db.orm.cache",
+        "type": "class",
+        "value": "Doctrine\\Common\\Cache\\ArrayCache"
+    },
+    {
+        "name": "db.orm.em",
+        "type": "class",
+        "value": "Doctrine\\ORM\\EntityManager"
+    },
+    {
+        "name": "em",
+        "type": "class",
+        "value": "Doctrine\\ORM\\EntityManager"
+    },
+    {
+        "name": "migrations.output_writer",
+        "type": "class",
+        "value": "Doctrine\\DBAL\\Migrations\\OutputWriter"
+    },
+    {
+        "name": "migrations.configuration",
+        "type": "class",
+        "value": "Doctrine\\DBAL\\Migrations\\Configuration\\Configuration"
+    },
+    {
+        "name": "validator",
+        "type": "class",
+        "value": "Symfony\\Component\\Validator\\Validator\\RecursiveValidator"
+    },
+    {
+        "name": "validator.builder",
+        "type": "class",
+        "value": "Symfony\\Component\\Validator\\ValidatorBuilder"
+    },
+    {
+        "name": "validator.mapping.class_metadata_factory",
+        "type": "class",
+        "value": "Symfony\\Component\\Validator\\Mapping\\Factory\\LazyLoadingMetadataFactory"
+    },
+    {
+        "name": "validator.validator_factory",
+        "type": "class",
+        "value": "Silex\\ConstraintValidatorFactory"
+    },
+    {
+        "name": "validator.object_initializers",
+        "type": "array",
+        "value": ""
+    },
+    {
+        "name": "validator.validator_service_ids",
+        "type": "array",
+        "value": ""
+    },
+    {
+        "name": "client",
+        "type": "class",
+        "value": "App\\Model\\Client"
+    }
+]

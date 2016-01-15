@@ -1,0 +1,53 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "/",
+  "type": "object",
+  "properties": {
+    "code": {
+      "id": "code",
+      "type": "integer"
+    },
+    "status": {
+      "id": "status",
+      "type": "string"
+    },
+    "data": {
+      "id": "data",
+      "type": "object",
+      "properties": {
+        "id": {
+          "id": "id",
+          "type": "integer"
+        },
+        "name": {
+          "id": "name",
+          "type": "string"
+        },
+        "email": {
+          "id": "email",
+          "type": "string"
+        },
+        "phone": {
+          "id": "phone",
+          "type": "string"
+        },
+        "status": {
+          "id": "status",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "email",
+        "phone",
+        "status"
+      ]
+    }
+  },
+  "required": [
+    "code",
+    "status",
+    "data"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "name": "arduanov/silex-bootstrap",
+  "description": "Silex bootstrap",
+  "authors": [
+    {
+      "name": "Arduanov Marsel",
+      "email": "arduanov@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/"
+    }
+  },
+  "scripts": {
+    "post-root-package-install": [
+      "php ./bin/db.console orm:schema-tool:update --force",
+      "php ./bin/db.console migrations:migrate --no-interaction"
+    ]
+  },
+  "require": {
+    "php": ">=5.5.0",
+    "silex/silex": "~1.2",
+    "doctrine/migrations": "1.0.*@dev",
+    "doctrine/dbal": "~2.5",
+    "doctrine/orm": "~2.5",
+    "monolog/monolog": "~1.16",
+    "symfony/config": "~2.7",
+    "symfony/validator": "~2.7",
+    "doctrine/cache": "~1.4",
+    "symfony/monolog-bridge": "~2.7",
+    "symfony/console": "~2.7",
+    "symfony/process": "~2.7",
+    "symfony/filesystem": "~2.7",
+    "sorien/silex-pimple-dumper": "~1.0"
+  },
+  "require-dev": {
+    "sorien/silex-pimple-dumper": "~1.0",
+    "cnam/codeception-json-schema": "dev-master",
+    "flow/jsonpath": "~0.2.4",
+    "codeception/codeception": "~2.1.0"
+  }
+}

@@ -1,0 +1,23 @@
+# Codeception Test Suite Configuration
+#
+# Suite for functional (integration) tests
+# Emulate web requests and make application process them
+# Include one of framework modules (Symfony2, Yii2, Laravel5) to use it
+
+class_name: FunctionalTester
+modules:
+    enabled:
+        - Asserts
+        - REST:
+            depends: Silex
+        - Silex:
+            app: tests/_app_bootstrap.php
+        - JsonSchema
+        - Db:
+           dsn: 'mysql:host=localhost;dbname=silex_tests'
+           user: 'root'
+           password: 'root'
+           dump: 'tests/_data/dump.sql'
+           populate: true
+           cleanup: false
+           reconnect: true
