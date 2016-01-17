@@ -1,5 +1,9 @@
 [![Build Status](https://travis-ci.org/arduanov/silexTest.svg?branch=master)](https://travis-ci.org/arduanov/silexTest)
 
+## Api documentation
+
+http://docs.test7328.apiary.io/
+
 ## Vagarant
 
     $ vagrant plugin install vagrant-hostsupdater
